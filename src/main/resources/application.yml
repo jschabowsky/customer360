@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    function:
+      definition: stddsPositionAirportFlightIdentifierConsumer
+    stream:
+      bindings:
+        stddsPositionAirportFlightIdentifierConsumer-in-0:
+          destination: STDDS/position/*/*
+logging:
+  level:
+    root: info
+    org:
+      springframework: info
+
